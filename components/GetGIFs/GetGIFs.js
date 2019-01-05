@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Image } from 'react-native';
+import { View, Image, StyleSheet } from 'react-native';
 import { Button } from '../Button';
 
 export default class GetGIFs extends Component {
@@ -39,7 +39,7 @@ export default class GetGIFs extends Component {
         return (
             <View>
                 <Image
-                    style={{ width: 300, height: 200, marginBottom: 5 }}
+                    style={styles.gif}
                     source={{ uri: `${this.state.gifURL}` }}
                 />
                 <Button
@@ -59,3 +59,11 @@ export default class GetGIFs extends Component {
         );
     }
 }
+
+const styles = StyleSheet.create({
+    gif: {
+        width: 300, 
+        height: 200, 
+        marginBottom: 10,
+    },
+})

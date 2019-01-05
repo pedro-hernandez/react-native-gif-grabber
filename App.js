@@ -6,7 +6,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Reaction GIF Grabber</Text>
+        <Text style={styles.title}>Reaction GIF Generator</Text>
         <GetGIFs />
       </View>
     );
@@ -20,4 +20,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  title: {
+    fontSize: 30,
+    marginBottom: 10,
+  }
 });
