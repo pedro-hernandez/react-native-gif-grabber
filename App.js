@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   title: {
+    fontFamily: 'System',
     fontSize: 30,
     color: '#eeeeee',
     marginBottom: 20,
