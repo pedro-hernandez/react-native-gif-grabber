@@ -7,7 +7,10 @@ export default class Button extends Component {
     }
 
 onPress(choice) {
-    console.log('clicked', choice);
+    // console.log('clicked', choice);
+    const indexPosition = Math.floor(Math.random() * choice.length);
+    choice = choice[indexPosition];
+    console.log(choice);
     this.props.pickedTheme(choice);
 }    
 
@@ -17,7 +20,7 @@ render() {
             <TouchableHighlight
                 style={styles.button}
                 onPress={() => this.onPress(this.props.value)}>
-                <Text style={styles.text}>{this.props.value}</Text>
+                <Text style={styles.text}>{this.props.value[0]}</Text>
             </TouchableHighlight>
         </View>
     )
@@ -31,8 +34,8 @@ const styles = StyleSheet.create({
         width: 300,
         height: 50,
         borderWidth: 1,
-        borderRadius: 4,
-        borderColor: '#00000',
+        borderRadius: 10,
+        borderColor: '#05f',
         alignItems: 'center',
         justifyContent: 'center',
         marginBottom: 5,

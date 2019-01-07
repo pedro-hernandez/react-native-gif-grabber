@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 import { Button } from '../Button';
+import { FadeInImage } from '../FadeInImage';
+
 
 export default class GetGIFs extends Component {
     constructor() {
         super();
         this.state = {
             gifURL: './img/conyztyxb0bqbspqgsmg.gif',
-            yes: 'yes',
-            no: 'no',
-            maybe: 'maybe',
+            yes: ['yes', 'affirmative', 'definitely', 'si'],
+            no: ['no', 'negative', 'nope', 'never', 'ixnay', 'nah', 'nay'],
+            maybe: ['maybe', 'perhaps', 'undecided'],
+            testArr: ['octopus', 'kitten', 'puppy'],
         }
     }
 
@@ -38,7 +41,7 @@ export default class GetGIFs extends Component {
     render() {
         return (
             <View>
-                <Image
+                <FadeInImage
                     style={styles.gif}
                     source={{ uri: `${this.state.gifURL}` }}
                 />
@@ -54,7 +57,10 @@ export default class GetGIFs extends Component {
                     value={this.state.maybe}
                     pickedTheme={this.pickedTheme}
                 />
-
+                {/* <Button
+                    value={this.state.testArr}
+                    pickedTheme={this.pickedTheme}
+                /> */}
             </View>
         );
     }
