@@ -6,26 +6,26 @@ export default class Button extends Component {
         super();
     }
 
-onPress(choice) {
-    // console.log('clicked', choice);
-    const indexPosition = Math.floor(Math.random() * choice.length);
-    choice = choice[indexPosition];
-    console.log(choice);
-    this.props.pickedTheme(choice);
-}    
+    onPress(choice) {
+        // console.log('clicked', choice);
+        const indexPosition = Math.floor(Math.random() * choice.length);
+        choice = choice[indexPosition];
+        console.log(choice);
+        this.props.pickedTheme(choice);
+    }
 
-render() {
-    return (
-        <View>
-            <TouchableHighlight
-                style={styles.button}
-                onPress={() => this.onPress(this.props.value)}>
-                <Text style={styles.text}>{this.props.value[0]}</Text>
-            </TouchableHighlight>
-        </View>
-    )
-}
-
+    render() {
+        let buttonText = this.props.value[0];
+        return (
+            <View>
+                <TouchableHighlight
+                    style={styles.button}
+                    onPress={() => this.onPress(this.props.value)}>
+                    <Text style={styles.text}>{buttonText.toUpperCase()}</Text>
+                </TouchableHighlight>
+            </View>
+        )
+    }
 }
 
 const styles = StyleSheet.create({
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
         borderColor: '#05f',
         alignItems: 'center',
         justifyContent: 'center',
-        marginBottom: 5,
+        marginBottom: 10,
     },
     text: {
         color: '#fff',

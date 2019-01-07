@@ -9,7 +9,7 @@ export default class GetGIFs extends Component {
         super();
         this.state = {
             gifURL: './img/conyztyxb0bqbspqgsmg.gif',
-            yes: ['yes', 'affirmative', 'definitely', 'si'],
+            yes: ['yes', 'affirmative', 'definitely', 'ok'],
             no: ['no', 'negative', 'nope', 'never', 'ixnay', 'nah', 'nay'],
             maybe: ['maybe', 'perhaps', 'undecided'],
             testArr: ['octopus', 'kitten', 'puppy'],
@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
     gif: {
         width: 300, 
         height: 200, 
-        marginBottom: 10,
+        marginBottom: 20,
+        borderRadius: 10,
     },
 })

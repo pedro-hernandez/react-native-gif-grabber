@@ -31,16 +31,16 @@ export default class FadeInImage extends Component {
 
     render() {
         let { fadeAnim } = this.state;
-
         return (
             <Animated.Image
+                source={{
+                    ...this.props.source,
+                }}
                 style={{
                     ...this.props.style,
                     opacity: fadeAnim,
                 }}
-                source={{
-                    ...this.props.source,
-                }} >
+            >
                 {this.props.children}
             </Animated.Image>
         );
