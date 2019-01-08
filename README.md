@@ -2,4 +2,4 @@
 
 A mobile app for Android and iOS that generates a random animated GIF based the button pressed.
 
-Built using React Native and the Giphy.com API.
+Built using [React Native] (https://facebook.github.io/react-native/) and the [Giphy API] (API).
