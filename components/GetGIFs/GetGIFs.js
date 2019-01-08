@@ -69,7 +69,7 @@ export default class GetGIFs extends Component {
 const styles = StyleSheet.create({
     gif: {
         width: 300, 
-        height: 200, 
+        height: 300, 
         marginBottom: 20,
         borderRadius: 10,
     },

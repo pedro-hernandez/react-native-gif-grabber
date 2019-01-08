@@ -30,12 +30,11 @@ export default class Button extends Component {
 
 const styles = StyleSheet.create({
     button: {
-        backgroundColor: '#05f',
         width: 300,
         height: 50,
-        borderWidth: 1,
+        borderWidth: 2,
         borderRadius: 10,
-        borderColor: '#05f',
+        borderColor: '#eeeeee',
         alignItems: 'center',
         justifyContent: 'center',
         marginBottom: 10,

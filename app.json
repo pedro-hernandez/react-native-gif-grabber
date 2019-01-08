@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "react-native-app",
-    "description": "This project is really great.",
-    "slug": "react-native-app",
+    "name": "Reaction GIF Generator",
+    "description": "Yes? No? Maybe? This app fetches a randomly perfect animated GIF to match your mood. GIFs courtesy of Giphy.",
+    "slug": "react-native-gif-grabber",
     "privacy": "public",
     "sdkVersion": "31.0.0",
     "platforms": ["ios", "android"],
