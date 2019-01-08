@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Reaction GIF Generator",
-    "description": "Yes? No? Maybe? This app fetches a randomly perfect animated GIF to match your mood. GIFs courtesy of Giphy.",
+    "description": "Yes? No? Maybe? This app fetches a perfectly random animated GIF to match your mood. GIFs courtesy of Giphy.",
     "slug": "react-native-gif-grabber",
     "privacy": "public",
     "sdkVersion": "31.0.0",
